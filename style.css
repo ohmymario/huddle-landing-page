@@ -79,21 +79,25 @@ header .logo {
 }
 
 .hero-info .hero-button {
+  font-family: var(--head-font);
+  font-size: var(--body-size);
+  color: var(--violet);
   background: var(--white);
 
   box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
   border-radius: 28px;
   padding: 12px 62px;
   border: none;
-}
 
-.hero-button a {
-  font-family: var(--head-font);
-  font-size: var(--body-size);
-  color: var(--violet);
   line-height: 27px;
   text-decoration: none;
+  transition: all 0.35s;
+}
+
+.hero-info .hero-button:hover {
   color: var(--white);
+  background: var(--soft-magenta);
+  cursor: pointer;
 }
 
 .social-links {
