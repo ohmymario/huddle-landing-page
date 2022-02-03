@@ -5,6 +5,7 @@
   --violet: hsl(257, 40%, 49%);
   --soft-magenta: hsl(300, 69%, 71%);
   --socials-hover: hsl(322, 100%, 66%);
+  --white: hsl(0, 0%, 100%);
   --head-font: "Poppins", sans-serif;
   --head-size: 2.5rem;
   --body-font: "Open Sans", sans-serif;
@@ -60,7 +61,7 @@ header .logo {
 .hero-info h1 {
   font-family: var(--head-font);
   font-size: var(--head-size);
-  color: white;
+  color: var(--white);
   font-weight: 600;
   line-height: 60px;
   margin-bottom: 24px;
@@ -69,7 +70,7 @@ header .logo {
 .hero-info p {
   font-family: var(--body-font);
   font-size: var(--body-size);
-  color: white;
+  color: var(--white);
   line-height: 27px;
   font-weight: 400;
 
@@ -78,7 +79,8 @@ header .logo {
 }
 
 .hero-info .hero-button {
-  background: white;
+  background: var(--white);
+
   box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
   border-radius: 28px;
   padding: 12px 62px;
@@ -91,6 +93,7 @@ header .logo {
   color: var(--violet);
   line-height: 27px;
   text-decoration: none;
+  color: var(--white);
 }
 
 .social-links {
@@ -101,8 +104,8 @@ header .logo {
 }
 
 .social-links i {
-  color: white;
-  border: 1px solid white;
+  color: var(--white);
+  border: 1px solid var(--white);
   text-align: center;
 
   padding: 10px;
@@ -120,9 +123,8 @@ header .logo {
 .attribution {
   font-size: 11px;
   text-align: center;
-  letter-spacing: 1.2;
-  color: white;
+  color: var(--white);
 }
 .attribution a {
-  color: white;
+  color: var(--white);
 }
