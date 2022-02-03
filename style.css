@@ -121,10 +121,14 @@ header .logo {
 }
 
 .attribution {
+  font-family: var(--body-font);
   font-size: 11px;
   text-align: center;
+  letter-spacing: 0.5px;
   color: var(--white);
 }
+
+/* NEED TO ADD A HOVER */
 .attribution a {
   color: var(--white);
 }
