@@ -25,14 +25,15 @@ body {
 }
 
 main {
-  padding: 64px 80px 0 64px;
+  padding: 54px 73px 0 73px;
 }
 
 header {
-  margin-bottom: 104px;
+  margin-bottom: 80px;
 }
 
-header.logo {
+header .logo {
+  width: 216px;
 }
 
 .hero {
@@ -41,11 +42,11 @@ header.logo {
 /* wanna center everything and either resize or set max width */
 .hero-content {
   display: flex;
-  gap: 60px;
+  gap: 53px;
 }
 
 .hero-content .hero-image {
-  width: 696px;
+  width: 711px;
 }
 
 .hero-info h1 {
