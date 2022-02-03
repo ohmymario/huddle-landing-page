@@ -22,6 +22,12 @@ html {
 body {
   margin: 0;
   background-color: var(--violet);
+  background-image: url(images/bg-desktop.svg);
+  background-size: auto auto;
+
+  /* GOING TO USE THIS FOR ANYTHING ABOVE 1440 X 800 */
+  /* background-size: 100% auto; */
+  background-repeat: no-repeat;
 }
 
 main {
