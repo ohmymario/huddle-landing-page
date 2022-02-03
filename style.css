@@ -1,6 +1,89 @@
 /* MONITOR LR 80 */
 /* MONITOR TOP 64  */
 
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+  --head-font: "Poppins", sans-serif;
+  --head-size: 2.5rem;
+  --body-font: "Open Sans", sans-serif;
+  --body-size: 1.125rem;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: var(--violet);
+}
+
+main {
+  padding: 64px 80px 0 64px;
+}
+
+header {
+  margin-bottom: 104px;
+}
+
+header.logo {
+}
+
+.hero {
+}
+
+/* wanna center everything and either resize or set max width */
+.hero-content {
+  display: flex;
+  gap: 60px;
+}
+
+.hero-content .hero-image {
+  width: 696px;
+}
+
+.hero-info h1 {
+  font-family: var(--head-font);
+  font-size: var(--head-size);
+  color: white;
+  font-weight: 600;
+  line-height: 60px;
+  margin-bottom: 24px;
+}
+
+.hero-info p {
+  font-family: var(--body-font);
+  font-size: var(--body-size);
+  color: white;
+  line-height: 27px;
+  font-weight: 400;
+
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.hero-info .hero-button {
+  background: white;
+  box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+  border-radius: 28px;
+  padding: 12px 62px;
+  border: none;
+}
+
+.hero-button a {
+  font-family: var(--head-font);
+  font-size: var(--body-size);
+  color: var(--violet);
+  line-height: 27px;
+  text-decoration: none;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
