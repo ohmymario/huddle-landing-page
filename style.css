@@ -28,9 +28,10 @@ body {
   background-image: url(images/bg-desktop.svg);
   background-size: auto auto;
   background-repeat: no-repeat;
-}
 
-main {
+  display: flex;
+  flex-direction: column;
+
   padding: 54px 73px 0 73px;
 }
 
@@ -145,6 +146,7 @@ header .logo {
 @media (min-height: 801px) {
   body {
     background-size: cover;
+    justify-content: space-between;
   }
 }
 
@@ -157,10 +159,8 @@ header .logo {
 @media screen and (max-width: 1255px) {
   body {
     background-color: purple;
-  }
-
-  main {
     padding: 40px 40px 0px 40px;
+    justify-content: space-between;
   }
 
   .hero-content .hero-image {
@@ -170,16 +170,73 @@ header .logo {
 }
 
 @media screen and (max-width: 850px) {
+  body {
+    padding: 40px 20px 0px 20px;
+  }
   .hero-content {
     gap: 30px;
   }
   header {
     margin-bottom: 40px;
   }
-  main {
-    padding: 40px 20px 0px 20px;
-  }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 730px) {
+  body {
+    padding: 40px 35px 0px 35px;
+    background-image: url(images/bg-mobile.svg);
+    background-size: contain;
+  }
+
+  header {
+    margin-bottom: 50px;
+  }
+
+  header .logo {
+    width: 120px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .hero-info h1 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    line-height: 36px;
+  }
+
+  .hero-info p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+
+  .hero-info .hero-button {
+    padding: 6px 64px;
+    font-size: 12px;
+  }
+
+  .hero-content {
+    margin-bottom: 64px;
+  }
+
+  .social-links {
+    font-size: 12px;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .social-links i {
+    padding: 7px;
+    width: 27px;
+    height: 27px;
+  }
+
+  .hero-content .hero-image,
+  .hero-content .hero-info {
+    text-align: center;
+    width: 100%;
+  }
 }
