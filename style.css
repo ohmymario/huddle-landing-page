@@ -158,7 +158,6 @@ header .logo {
 
 @media screen and (max-width: 1255px) {
   body {
-    background-color: purple;
     padding: 40px 40px 0px 40px;
     justify-content: space-between;
   }
