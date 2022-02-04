@@ -22,13 +22,11 @@ html {
 }
 
 body {
+  height: 100vh;
   margin: 0;
   background-color: var(--violet);
   background-image: url(images/bg-desktop.svg);
   background-size: auto auto;
-
-  /* GOING TO USE THIS FOR ANYTHING ABOVE 1440 X 800 */
-  /* background-size: 100% auto; */
   background-repeat: no-repeat;
 }
 
@@ -47,7 +45,6 @@ header .logo {
 .hero {
 }
 
-/* wanna center everything and either resize or set max width */
 .hero-content {
   display: flex;
   gap: 53px;
@@ -55,7 +52,11 @@ header .logo {
 }
 
 .hero-content .hero-image {
-  width: 711px;
+  width: 45%;
+}
+
+.hero-info {
+  width: 50%;
 }
 
 .hero-info h1 {
@@ -132,7 +133,53 @@ header .logo {
   color: var(--white);
 }
 
-/* NEED TO ADD A HOVER */
 .attribution a {
   color: var(--white);
+  transition: all 0.35s;
+}
+
+.attribution a:hover {
+  color: var(--socials-hover);
+}
+
+@media (min-height: 801px) {
+  body {
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .hero-content .hero-image {
+    width: 711px;
+  }
+}
+
+@media screen and (max-width: 1255px) {
+  body {
+    background-color: purple;
+  }
+
+  main {
+    padding: 40px 40px 0px 40px;
+  }
+
+  .hero-content .hero-image {
+    width: 50%;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .hero-content {
+    gap: 30px;
+  }
+  header {
+    margin-bottom: 40px;
+  }
+  main {
+    padding: 40px 20px 0px 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
 }
