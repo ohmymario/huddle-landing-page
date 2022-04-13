@@ -1,6 +1,3 @@
-/* MONITOR LR 80 */
-/* MONITOR TOP 64  */
-
 :root {
   --violet: hsl(257, 40%, 49%);
   --soft-magenta: hsl(300, 69%, 71%);
@@ -41,9 +38,6 @@ header {
 
 header .logo {
   width: 216px;
-}
-
-.hero {
 }
 
 .hero-content {
