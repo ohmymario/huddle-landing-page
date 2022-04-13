@@ -3,4 +3,5 @@
 *.fig
 .DS_Store
 README-template.md
+style-guide.md
 design
